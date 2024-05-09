@@ -14,13 +14,19 @@ _sym_db = _symbol_database.Default()
 
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\rexample.proto\x12\x07\x65xample\"\"\n\x06Person\x12\x0c\n\x04name\x18\x01 \x01(\t\x12\n\n\x02id\x18\x02 \x01(\x05\x62\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\rexample.proto\x12\x07\x65xample\"(\n\tTransport\x12\x0c\n\x04name\x18\x01 \x01(\t\x12\r\n\x05price\x18\x02 \x01(\x11\"C\n\x07\x41\x64\x64ress\x12\x0e\n\x06street\x18\x01 \x01(\t\x12\x0c\n\x04\x63ity\x18\x02 \x01(\t\x12\r\n\x05state\x18\x03 \x01(\t\x12\x0b\n\x03zip\x18\x04 \x01(\x05\"\xc6\x01\n\x06Person\x12\x0c\n\x04name\x18\x01 \x01(\t\x12\n\n\x02id\x18\x02 \x01(\x05\x12\x0e\n\x06\x65mails\x18\x03 \x03(\t\x12!\n\x07\x61\x64\x64ress\x18\x04 \x01(\x0b\x32\x10.example.Address\x12$\n\x06\x65state\x18\x05 \x01(\x0e\x32\x14.example.ERealEstate\x12\x10\n\x06square\x18\x06 \x01(\x12H\x00\x12$\n\x08vehicles\x18\x07 \x03(\x0b\x32\x12.example.TransportB\x11\n\x0fsquare_optional*2\n\x0b\x45RealEstate\x12\x0b\n\x07\x45_HOUSE\x10\x00\x12\n\n\x06\x45_FLAT\x10\x01\x12\n\n\x06\x45_NONE\x10\x02\x62\x06proto3')
 
 _globals = globals()
 _builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, _globals)
 _builder.BuildTopDescriptorsAndMessages(DESCRIPTOR, 'example_pb2', _globals)
 if not _descriptor._USE_C_DESCRIPTORS:
   DESCRIPTOR._loaded_options = None
-  _globals['_PERSON']._serialized_start=26
-  _globals['_PERSON']._serialized_end=60
+  _globals['_EREALESTATE']._serialized_start=338
+  _globals['_EREALESTATE']._serialized_end=388
+  _globals['_TRANSPORT']._serialized_start=26
+  _globals['_TRANSPORT']._serialized_end=66
+  _globals['_ADDRESS']._serialized_start=68
+  _globals['_ADDRESS']._serialized_end=135
+  _globals['_PERSON']._serialized_start=138
+  _globals['_PERSON']._serialized_end=336
 # @@protoc_insertion_point(module_scope)

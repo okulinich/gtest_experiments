@@ -2,8 +2,31 @@ syntax = "proto3";
 
 package example;
 
-message Person
+enum ERealEstate
 {
+    E_HOUSE = 0;
+    E_FLAT = 1;
+    E_NONE = 2;
+}
+
+message Transport {
+    string name = 1;
+    sint32 price = 2;
+}
+
+message Address {
+    string street = 1;
+    string city = 2;
+    string state = 3;
+    int32 zip = 4;
+}
+
+message Person {
     string name = 1;
     int32 id = 2;
+    repeated string emails = 3;
+    Address address = 4;
+    ERealEstate estate = 5;
+    oneof square_optional { sint64 square = 6; }
+    repeated Transport vehicles = 7;
 }
