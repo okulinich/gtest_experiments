@@ -1,4 +1,4 @@
-*How to run:*
+*How to run Gtest example:*
 `clang++ -lgtest -lgtest_main -pthread -std=c++14 gtest_sample.cpp`
 `./a.out`
 
